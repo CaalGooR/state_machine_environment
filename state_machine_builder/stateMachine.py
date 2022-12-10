@@ -1,6 +1,6 @@
 from .stateNode import StateNode
-from libs.state_machine_builder.state import State
-from libs.state_machine_builder.nodeLink import NodeLink
+from state_machine_builder.state import State
+from state_machine_builder.nodeLink import NodeLink
 
 
 class StateMachine:
@@ -58,7 +58,7 @@ class StateMachine:
         if isinstance(state_to, State):
             state_to = state_to.id
 
-        link_id = state_from+NodeLink.ID_SEPARATOR+state_to
+        link_id = state_from + NodeLink.ID_SEPARATOR + state_to
         for link in self.__nodes[self.__current_node].node_links:
             print(link.id)
 
@@ -82,7 +82,6 @@ class StateMachine:
             index_result += 1
 
         return -1
-
 
     def manage(self):
         # TODO
