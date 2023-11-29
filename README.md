@@ -1,5 +1,5 @@
 # State Machine Environment
-State Machine Engine can now build your SM using a list of dictionaries that contain a state (called 'node' in the dictionary attribute) and their links related to other states.
+
 
 ```python
 # Example:
